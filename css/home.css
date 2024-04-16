@@ -1,0 +1,39 @@
+main > div > aside > h1 > a {
+  text-decoration: none;
+  color: inherit;
+}
+
+main > div > aside > h1 > a:hover {
+  text-decoration: underline;
+}
+
+main > div:nth-of-type(1) {
+  background-color: rgba(3, 64, 1, 0.9);
+}
+main > div:nth-of-type(2) {
+  background-color: rgb(89, 52, 7);
+}
+main > div:nth-of-type(3) {
+  background-color: rgba(140, 69, 7, 0.9);
+}
+
+@media (max-width: 640px) {
+  main > div:nth-child(2) {
+    flex-direction: column-reverse;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 768px) {
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+}
+
+@media (min-width: 1281px) and (max-width: 1536px) {
+}
+
+@media (min-width: 1537px) {
+}
