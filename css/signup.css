@@ -1,0 +1,106 @@
+main > form,
+main > aside {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 400px;
+  background-color: rgba(34, 64, 38, 0.9);
+  padding: 20px;
+  border-radius: 2px;
+}
+main > aside {
+  display: flex;
+  display: none;
+}
+main > aside > p {
+  text-align: justify;
+}
+
+main > form > div {
+  display: flex;
+  gap: 4px;
+  flex-direction: column;
+}
+
+main > form > div:last-of-type {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+main > form > div > label > small {
+  color: #feca45;
+  float: right;
+}
+
+main > form > div > input {
+  height: 32px;
+  border: none;
+  border-radius: 2px;
+  outline: none;
+  color: #383d40;
+  padding: 0 8px;
+  font-size: 0.8em;
+}
+
+main > form > div > input:focus {
+  background-color: #f2efeb;
+}
+
+main > form > div > span {
+  display: block;
+  font-size: 0.8em;
+  height: 15px;
+}
+
+main > form > div > input[type="submit"],
+main > form > div > input[type="reset"] {
+  height: auto;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
+
+main > form > div > input[type="submit"] {
+  color: white;
+  background-color: var(--active-dark-color);
+}
+
+main > form > div > input[type="reset"] {
+  background-color: #b8c462;
+  color: #34592e;
+}
+
+main > form > div > input[type="submit"]:hover {
+  background-color: var(--active-color);
+  cursor: pointer;
+}
+
+main > form > div > input[type="reset"]:hover {
+  background-color: #d0d98b;
+  cursor: pointer;
+}
+
+@media (max-width: 640px) {
+  main > form,
+  main > aside {
+    width: 100%;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 768px) {
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+}
+
+@media (min-width: 1281px) and (max-width: 1536px) {
+}
+
+@media (min-width: 1537px) {
+}

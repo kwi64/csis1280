@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>eco park</title>
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/signup.css" />
+    <script src="js/signup.js" defer></script>
   </head>
   <body>
     <header>
@@ -26,59 +27,79 @@
             <a href="./accomodations.html">ACCOMODATIONS</a>
           </li>
         </ul>
-        <a href="./signup.html">Sign Up</a>
+        <a href="./signup.html" class="active">Sign Up</a>
       </nav>
     </header>
 
     <main>
-      <div>
-        <img src="images/home_trail.jpg" />
-        <aside>
-          <h1><a href="trails.html">Discover Enchanting Trails</a></h1>
-          <p>
-            Immerse yourself in nature's embrace as you wander through our
-            winding trails, each path a gateway to discovery and wonder.
-            Traverse lush forests, follow gentle streams, and ascend to
-            breathtaking viewpoints where the beauty of our surroundings unfolds
-            before you. Whether you seek a leisurely stroll or an exhilarating
-            hike, our trails offer an escape into the heart of nature, inviting
-            you to explore and connect with the wilderness.
-          </p>
-        </aside>
-      </div>
-      <div>
-        <aside>
-          <h1>
-            <a href="restaurants.html"
-              >Culinary Delights Amidst Natural Beauty</a
-            >
-          </h1>
-          <p>
-            Indulge your senses in a culinary journey that reflects the essence
-            of our region. Our restaurant is a celebration of local flavors and
-            sustainable dining, where each dish is thoughtfully crafted using
-            fresh ingredients sourced from nearby farms and producers. Enjoy
-            seasonal specialties paired with stunning views of our surroundings,
-            creating a dining experience that nourishes both body and soul.
-          </p>
-        </aside>
-        <img src="images/home_restaurants.jpg" />
-      </div>
-      <div>
-        <img src="images/home_accomodations.jpg" />
-        <aside>
-          <h1><a href="accomodations.html">Retreat to Serenity</a></h1>
-          <p>
-            Retreat to eco-friendly accommodations nestled within our tranquil
-            oasis. Each lodging option - whether it's a cozy cabin, a luxury
-            tent, or a sustainable lodge - harmonizes with the natural
-            environment, providing a peaceful haven for relaxation. Fall asleep
-            under starlit skies, wake to birdsong, and embrace the serenity of
-            nature throughout your stay, leaving behind the noise of everyday
-            life.
-          </p>
-        </aside>
-      </div>
+      <h1>Sign up for insider perks and eco adventures!</h1>
+      <form onsubmit="return false" novalidate>
+        <div>
+          <label for="firstName">First Name<small></small></label>
+          <input
+            data-name="First Name"
+            type="text"
+            id="firstName"
+            name="firstName"
+            pattern="[a-zA-Z\s]+"
+            required
+          />
+        </div>
+        <div>
+          <label for="lastName">Last Name<small></small></label>
+          <input
+            type="text"
+            data-name="Last Name"
+            id="lastName"
+            name="lastName"
+            pattern="[a-zA-Z\s]+"
+            required
+          />
+        </div>
+        <div>
+          <label for="email">Email<small></small></label>
+          <input
+            data-name="Email"
+            type="email"
+            pattern=".+@.+\..+"
+            id="email"
+            name="email"
+            required
+          />
+        </div>
+        <div>
+          <label for="password">Password<small></small></label>
+          <input
+            data-name="Password"
+            type="password"
+            id="password"
+            name="password"
+            required
+          />
+        </div>
+        <div>
+          <label for="confirmPassword">Confirm password<small></small></label>
+          <input
+            data-name="Confirm password"
+            type="password"
+            id="confirmPassword"
+            name="confirmPassword"
+            required
+          />
+        </div>
+        <div>
+          <input type="reset" value="Clear" onclick="clearForm(this.form)" />
+          <input type="submit" value="Sign Up" onclick="signUp(this.form)" />
+        </div>
+      </form>
+      <aside>
+        <p>
+          Welcome to Eco Park. Thank you for joining our community of nature
+          enthusiasts. Get ready to embark on exciting eco adventures, discover
+          hidden trails, and indulge in sustainable experiences. We're thrilled
+          to have you with us!
+        </p>
+      </aside>
     </main>
 
     <footer>
